@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.9.1/standard/ckeditor.js"></script>
+   <style>
+	   body{font-family:verdana}
+.phpcoding{width:900px; margin: 0 auto;background:#4d49f2}
+.headeroption {
+background-image: url("./images/ban.jpg") ;
+background-repeat: no-repeat;
+ background-size: 900px 145px;
+ background-color: #444;
+
+border-bottom: 2px solid #444444;
+height: 150px;
+}
+
+	.starttest a{
+		font-family: "Times New Roman", Georgia, Serif;
+		font-size: 25px;
+		color:#121069;
+	}
+</style>
+   </style>
+</head>
+<body>
+	<div class="phpcoding">
+		<div class="headeroption"></div>
+    <section class="maincontent">   
+      <div class="menu">
+      <ul>
+      <?php
+        $login = Session::get("login");
+        if($login == true){
+      ?>
+        <!--<li><a href="profile.php">Profile</a></li>-->
+        <li><a href="exam">Exam</a></li>
+        <li><a href="profile">Profile</a></li>
+        <li><a href="final">Final</a></li>
+        <li><a href="viewans">Answer</a></li>
+        <li><a href="?action=logout">Logout</a></li>
+        
+      </ul> 
+    
+      <span style ="float:right;color:#fdfafb"; font-family : "Times New Roman", Georgia, Serif;>
+      Welcome<strong><?php echo Session::get("name"); ?></strong> to this Exam....
+      </span>
+      <?php } ?>
+      </div>
+
+
+
+<div class="main">
+<h1>You are Done    !</h1>
+	<div class="starttest">
+	<p>Congratulations ! You have just Completed the test.</p>
+	<p>Final Sore : 
+		
+	</p>
+	<a href="viewans">View Correct Answer</a>
+	<a href="starttest">Again Start Test!!!!</a>
+	</div>
+  </div>
+  <style>
+    .footeroption{background:#202633;color:#fff;text-align:center;padding:20px;font-family: "Times New Roman", Times, serif;}
+    </style>
+    
+   </section>
+   <section class="footeroption">
+       <h2><?php echo "Dept. of Computer Science & Engineering, JUST"; ?></h2>
+     </section>
+   </div>
+   </body>
+   </html>
+  

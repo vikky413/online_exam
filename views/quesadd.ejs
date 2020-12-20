@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.9.1/standard/ckeditor.js"></script>
+   <style>
+	   body{font-family:verdana}
+.phpcoding{width:900px; margin: 0 auto;background:#4d49f2}
+.headeroption {
+background-image: url("./images/ban.jpg") ;
+background-repeat: no-repeat;
+ background-size: 900px 145px;
+ background-color: #444;
+
+border-bottom: 2px solid #444444;
+height: 150px;
+}
+   </style>
+</head>
+<body>
+	<div class="phpcoding">
+		<div class="headeroption"></div>
+
+
+        <section class="maincontent">
+            <div class="menu">
+            <ul>
+                <li><a href="users">Manage User</a></li>
+                <li><a href="quesadd">Add Ques</a></li>
+                <li><a href="queslist">Ques List</a></li>
+                <li><a href="?action=logout">Logout</a></li>
+            </ul>
+         </div>
+    
+         <style>
+            .adminpanel{width:480px;color:#999;margin:20px auto 0;padding:10px;border:1px solid #ddd;}
+        </style>
+       
+        <style>
+            .main h1{
+                
+                font-family: "Times New Roman", Georgia, Serif;
+                font-size: 30px;
+                color:#5e0c17;
+            }
+        </style>
+        <div class="main">
+        <h1>Admin Panel - Add Question</h1>
+        
+            <div class = "adminpanel">
+                <form action = "" method = "post">
+                <table> 
+                    <tr>
+                        <td>Question No</td>
+                        <td>:</td>
+                        <td><input type = "number" 
+                        >     
+                    </tr>
+                    
+                    <tr>
+                        <td>Question</td>
+                        <td>:</td>
+                        <td><input type = "text" name ="ques" placeholder = "Enter Question...." required/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Choice One</td>
+                        <td>:</td>
+                        <td><input type = "text" name ="ans1" placeholder = "Enter Choice One...." required/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Choice Two</td>
+                        <td>:</td>
+                        <td><input type = "text" name ="ans2" placeholder = "Enter Choice Two...." required/></td>
+                    </tr>
+                    <tr>
+                        <td>Choice Three</td>
+                        <td>:</td>
+                        <td><input type = "text" name ="ans3" placeholder = "Enter Choice Three...." required/></td>
+                    </tr>
+                    <tr>
+                        <td>Choice Four</td>
+                        <td>:</td>
+                        <td><input type = "text" name ="ans4" placeholder = "Enter Choice Four...." required/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Correct No.</td>
+                        <td>:</td>
+                        <td><input type = "number" name ="rightAns" required/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan = "3" style=" text-align: 'center'"  >
+                            <input type = "submit" value = "Add A Question"/>
+                       </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+        </div>
+
+        </section>
+        <section class="footeroption">
+                <h2><?php echo "Dept. of Computer Science & Engineering, JUST"; ?></h2>
+            </section>
+        </div>
+        </body>
+        </html>       
